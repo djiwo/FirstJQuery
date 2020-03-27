@@ -1,0 +1,35 @@
+
+
+#firstrow{
+
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    
+}
+
+.greenBackground{
+    background-color: green;
+}
+
+.redBackground{
+    background-color: red;
+}
+
+.square{
+    height: 100px;
+    width: 100px;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#fourthParagraph{
+    display: none;
+}
