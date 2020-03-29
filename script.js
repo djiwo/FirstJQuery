@@ -50,3 +50,60 @@ $("#greenCircle").click(function(){
 
  }
  );
+
+
+ $("#changefifthParagraph").click(function(){
+
+    if ($("#fifthParagraph").css("display") == "none"){
+
+      $("#fifthParagraph").fadeIn();
+
+    } else{
+
+      $("#fifthParagraph").fadeOut();
+
+    }
+
+    } );
+
+let secondGreenCircleBig = 0;
+
+$("#secondGreenCircle").click(function() {
+
+   if (secondGreenCircleBig == 0){
+
+      $(this).animate({
+         width:"400px", 
+         height:"400px"
+         }, 2000,
+         function(){
+            
+            $(this).css("background-color", "blue");
+
+         });
+
+
+
+
+
+      secondGreenCircleBig = 1;
+
+   }else {
+
+      $(this).animate({width:"100px", height:"100px"}, 2000,
+      function(){
+         
+         $(this).css("background-color", "green");
+
+      });
+      secondGreenCircleBig = 0;
+   }
+});
+
+var regex = /is/gi;
+
+   var string = "Regex is great! Isn't it?";
+
+   var result = string.match(regex);
+   
+   alert(result);
